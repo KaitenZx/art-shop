@@ -1,0 +1,33 @@
+.grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+	/* пространство между элементами сетки */
+	padding: 20px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pictureContainer {
+	display: flex;
+	position: relative;
+	width: 23vw;
+	height: 600px;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative; /* Required for next/image to work with fill */
+}
+
+.imageContainer :global(img) {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+}
