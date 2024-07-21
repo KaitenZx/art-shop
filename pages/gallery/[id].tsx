@@ -109,7 +109,7 @@ const PicturePage = ({ artDetail }: PicturePageProps) => {
 			<div className={styles.grid}>
 				{artDetail.images.map((picture, index) => (
 					<div key={index} className={styles.pictureContainer} onClick={() => openModal(picture)}>
-						<Image src={picture} alt='' layout="fill" style={{ objectFit: 'cover' }} />
+						<Image src={picture} alt='' fill style={{ objectFit: 'cover' }} />
 					</div>
 				))}
 			</div>

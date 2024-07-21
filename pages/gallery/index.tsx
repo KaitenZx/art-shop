@@ -51,7 +51,7 @@ const Gallery = ({ allArt }: GalleryProps) => {
 			<div className={styles.grid}>
 				{allArt.map(picture => (
 						<Link key={picture.name} href={`/gallery/${picture.name}`} className={styles.picture}>
-							<Image layout="fill" objectFit="cover" src={picture.path} alt={picture.alt} />
+							<Image fill style={{ objectFit: 'cover' }} src={picture.path} alt={picture.alt} />
 						</Link>
 				))}
 			</div>
