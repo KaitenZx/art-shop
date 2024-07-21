@@ -6,7 +6,7 @@ interface ModalProps {
   onClose: () => void;
   children: React.ReactNode;
 }
-
+//modal
 const Modal: React.FC<ModalProps> = ({ show, onClose, children }) => {
   if (!show) {
     return null;
